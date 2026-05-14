@@ -1,15 +1,52 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import fs from 'fs'
+import path from 'path'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+
+    {
+      name: 'vidya-gyan-admin-fallback',
+
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+
+          // ONLY route requests
+          if (
+            req.url?.startsWith('/vidya-gyan-admin') &&
+            !req.url.includes('/assets/') &&
+            !req.url.includes('.js') &&
+            !req.url.includes('.css') &&
+            !req.url.includes('.png') &&
+            !req.url.includes('.jpg') &&
+            !req.url.includes('.svg')
+          ) {
+
+            const filePath = path.join(
+              process.cwd(),
+              'public',
+              'vidya-gyan-admin',
+              'index.html'
+            )
+
+            const html = fs.readFileSync(filePath, 'utf-8')
+
+            res.setHeader('Content-Type', 'text/html')
+            res.end(html)
+
+            return
+          }
+
+          next()
+        })
+      },
+    },
+  ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    chunkSizeWarningLimit: 1600, // 500kb से बढ़ाकर 1.6mb कर दिया
-  },
-});
+})
