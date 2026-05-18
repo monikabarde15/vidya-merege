@@ -8,14 +8,14 @@ export default defineConfig({
     react(),
 
     {
-      name: 'vidya-gyan-admin-fallback',
+      name: 'admin-fallback',
 
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
 
           // ONLY route requests
           if (
-            req.url?.startsWith('/vidya-gyan-admin') &&
+            req.url?.startsWith('/admin') &&
             !req.url.includes('/assets/') &&
             !req.url.includes('.js') &&
             !req.url.includes('.css') &&
@@ -27,7 +27,7 @@ export default defineConfig({
             const filePath = path.join(
               process.cwd(),
               'public',
-              'vidya-gyan-admin',
+              'admin',
               'index.html'
             )
 
