@@ -6,7 +6,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/student/index.html"
+      "destination": "/"
     }
   ]
 }
