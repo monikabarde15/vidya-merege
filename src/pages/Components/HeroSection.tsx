@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroTeam from "/assets/2.svg";
+import heroTeam from "/assets/home/hero.jpeg";
 
 const HeroSection = () => {
   const stats = [
@@ -94,27 +94,7 @@ const HeroSection = () => {
             
             </motion.div>
 
-            {/* Stats */}
-            {/* <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="grid grid-cols-3 gap-6 pt-8"
-            >
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="text-center"
-                >
-                  <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#6c63ff] to-[#a5f3fc]">
-                    {stat.value}
-                  </div>
-                  <div className="text-base text-[#bfc0c4]">{stat.label}</div>
-                </motion.div>
-              ))}
-            </motion.div> */}
+            
           </motion.div>
 
           {/* ================= Right Image & Floating Cards ================= */}
