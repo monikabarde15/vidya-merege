@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroTeam from "/assets/2.svg";
+import heroTeam from "/assets/home/hero.jpeg";
 
 const HeroSection = () => {
   const stats = [
@@ -23,14 +23,6 @@ const HeroSection = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="space-y-8 text-black"
           >
-           {/* <motion.div
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 200 }}
-            >
-             <a href="#pricing"> <span className="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold">
-                Red Hat Cluster Lab
-              </span></a>
-            </motion.div>*/}
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -38,8 +30,9 @@ const HeroSection = () => {
               transition={{ delay: 0.2, duration: 1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
             >
-             Learn Purposefully and Lead Passionately: 
-             An Innovative Approach to Generative <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8358ff] to-[#39c6fa]">AI Professional Training
+             ORN-AI bridges Europe’s talent gap with {" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8358ff] to-[#39c6fa]">
+                 deployment-ready workforce capability.
               </span>
             </motion.h1>
 
@@ -57,52 +50,22 @@ const HeroSection = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 1 }}
             >
-            <a href="#contact">
+            <a href="/admin/register">
               <motion.button
                 whileHover={{ scale: 1.05, backgroundColor: "rgb(23 13 62)" }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center px-8 py-3 bg-[#2e254d]  text-white font-bold rounded-xl shadow-lg transition-all group text-lg"
               >
-                Book Your Courses Now
+                Signup Now
                 <span className="ml-2 group-hover:translate-x-1 transition-transform text-xl">
                   →
                 </span>
               </motion.button>
             </a>
-             {/* <a href="#Portfilo"> <motion.button
-                whileHover={{
-                  scale: 1.05,
-                  backgroundColor: "rgba(131,88,255,0.2)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center px-8 py-3 bg-transparent border-2 border-[#8358ff] text-white font-bold rounded-xl shadow-lg transition-all text-lg"
-              >
-                View Our Work
-              </motion.button>
-              </a> */}
+            
             </motion.div>
 
-            {/* Stats */}
-            {/* <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="grid grid-cols-3 gap-6 pt-8"
-            >
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="text-center"
-                >
-                  <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#6c63ff] to-[#a5f3fc]">
-                    {stat.value}
-                  </div>
-                  <div className="text-base text-[#bfc0c4]">{stat.label}</div>
-                </motion.div>
-              ))}
-            </motion.div> */}
+            
           </motion.div>
 
           {/* ================= Right Image & Floating Cards ================= */}
