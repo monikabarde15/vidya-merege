@@ -23,6 +23,15 @@ const HeroSection = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="space-y-8 text-black"
           >
+           
+
+            <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="space-y-8 text-black"
+          >
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -62,6 +71,26 @@ const HeroSection = () => {
                 </span>
               </motion.button>
             </a>
+            
+            </motion.div>
+
+            
+          </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 1 }}
+              className="text-xl text-[#bfc0c4] max-w-xl"
+            >
+            </motion.p>
+
+            <motion.div
+              className="flex flex-wrap gap-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 1 }}
+            >
             
             </motion.div>
 

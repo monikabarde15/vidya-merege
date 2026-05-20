@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const steps = [
   {
-    title: "Build Strong Foundations",
-    desc: "Gain a clear understanding of industry fundamentals, essential tools, and the skills required to begin your career confidently.",
+    title: "Assess & Score",
+    desc: "Standardized intake and AI-powered evaluation of CVs, technical skills, English proficiency, work eligibility, and workforce readiness.",
     number: "01",
     icon: (
       <svg viewBox="0 0 38 38" width="38" height="38">
@@ -22,8 +22,8 @@ const steps = [
     ),
   },
   {
-    title: "Practice with Real Projects",
-    desc: "Work on hands-on labs, guided assignments, and real business scenarios to turn theory into practical expertise.",
+    title: "Upskill & Validate",
+    desc: "Targeted upskilling pathways, realtime project validation, and guided learning designed to close deployment gaps efficiently.",
     number: "02",
     icon: (
       <svg viewBox="0 0 38 38" width="38" height="38">
@@ -39,8 +39,8 @@ const steps = [
     ),
   },
   {
-    title: "Prepare for Job Success",
-    desc: "Master interviews with mock sessions, targeted Q&A, expert guidance, and personalized CV optimization for guaranteed job placement.",
+    title: "Prepare & Deploy",
+    desc: "AI-ranked, recruiter-ready, talent-matched candidate pipelines delivered with standardized readiness scoring and recruiter intelligence.",
     number: "03",
     icon: (
       <svg viewBox="0 0 38 38" width="38" height="38">
@@ -148,11 +148,11 @@ const ProcessSection = () => (
       whileInView="visible"
       viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 0.6 }} variants={fadeUp} >
-      <span className="process-sub">Course We Offer</span>
+      <span className="process-sub">THE SOLUTION</span>
       <h2 className="process-title">
-        ORN-AI – Career Accelerator Program 
+        Turning raw talent into recruiter-ready pipelines.
         <br/>
-         <span className="gradient-text"> Your Learning Journey </span>
+         <span className="gradient-text"> Recruiter-ready talent pipelines. </span>
 
         {/* ORN-AI - <span className="gradient-text">Career </span> Accelerator Program */}
       </h2>
