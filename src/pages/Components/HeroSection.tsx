@@ -23,14 +23,15 @@ const HeroSection = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="space-y-8 text-black"
           >
-           {/* <motion.div
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 200 }}
-            >
-             <a href="#pricing"> <span className="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold">
-                Red Hat Cluster Lab
-              </span></a>
-            </motion.div>*/}
+           
+
+            <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="space-y-8 text-black"
+          >
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -38,8 +39,9 @@ const HeroSection = () => {
               transition={{ delay: 0.2, duration: 1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
             >
-             Learn Purposefully and Lead Passionately: 
-             An Innovative Approach to Generative <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8358ff] to-[#39c6fa]">AI Professional Training
+             ORN-AI bridges Europe’s talent gap with {" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8358ff] to-[#39c6fa]">
+                 deployment-ready workforce capability.
               </span>
             </motion.h1>
 
@@ -57,29 +59,39 @@ const HeroSection = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 1 }}
             >
-            <a href="#contact">
+            <a href="/admin/register">
               <motion.button
                 whileHover={{ scale: 1.05, backgroundColor: "rgb(23 13 62)" }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center px-8 py-3 bg-[#2e254d]  text-white font-bold rounded-xl shadow-lg transition-all group text-lg"
               >
-                Book Your Courses Now
+                Signup Now
                 <span className="ml-2 group-hover:translate-x-1 transition-transform text-xl">
                   →
                 </span>
               </motion.button>
             </a>
-             {/* <a href="#Portfilo"> <motion.button
-                whileHover={{
-                  scale: 1.05,
-                  backgroundColor: "rgba(131,88,255,0.2)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center px-8 py-3 bg-transparent border-2 border-[#8358ff] text-white font-bold rounded-xl shadow-lg transition-all text-lg"
-              >
-                View Our Work
-              </motion.button>
-              </a> */}
+            
+            </motion.div>
+
+            
+          </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 1 }}
+              className="text-xl text-[#bfc0c4] max-w-xl"
+            >
+            </motion.p>
+
+            <motion.div
+              className="flex flex-wrap gap-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 1 }}
+            >
+            
             </motion.div>
 
             {/* Stats */}

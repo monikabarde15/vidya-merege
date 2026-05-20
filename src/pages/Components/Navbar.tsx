@@ -1,3 +1,4 @@
+// src\pages\Components\Navbar.tsx (Vidya-merge)
 import React, { useState, useEffect, useRef } from "react";
 import "../../pages/Components/Navbar.css";
 import "../../pages/Components/MegaMenu.css";
@@ -19,7 +20,9 @@ const Navbar = () => {
   const menuRef = useRef(null);
 
   const links = [
-    { name: "Home", path: "/" },
+    { name: "Platform", path: "/" },
+    { name: "Recruiters", path: "https://hire.orn-ai.com/login" },
+    { name: "Join Talent", path: "https://hire.orn-ai.com/register" },
     { name: "Courses", mega: true },
     { name: "About Us", path: "/about-us" },
     { name: "Blogs", path: "/blogs" },
