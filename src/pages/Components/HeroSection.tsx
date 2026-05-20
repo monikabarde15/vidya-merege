@@ -150,7 +150,7 @@ const HeroSection = () => {
                 5x ROI
               </div>*/}
               <div className="text-sm text-white"><a href="#pricing"> <span className="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-white text-sm font-semibold">
-                Professional Upskilling Program
+                Talent Infrastructure
               </span></a></div>
             </motion.div>
 
