@@ -22,7 +22,6 @@ const Navbar = () => {
   const links = [
     { name: "Platform", path: "/" },
     { name: "Recruiters", path: "https://hire.orn-ai.com/login" },
-    { name: "Join Talent", path: "https://hire.orn-ai.com/register" },
     { name: "Courses", mega: true },
     { name: "About Us", path: "/about-us" },
     { name: "Blogs", path: "/blogs" },
@@ -182,7 +181,7 @@ const Navbar = () => {
               )
             )}
           </ul>
-
+          <button className="navbar-btn"><a href="https://hire.orn-ai.com/register">Join Talent Pool</a></button>
           {/* ---------- PROFILE ---------- */}
           {isLoggedIn ? (
             <div className="profile-wrapper" ref={menuRef}>
